@@ -1,0 +1,61 @@
+main {
+  height: 100vh;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.btn {
+  position: relative;
+  background-color: transparent;
+  padding: 10px;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  height: 110%;
+  width: 102%;
+  background-color: #9dd347;
+  left: 5%;
+  top: 20%;
+  z-index: -1;
+}
+
+.hide {
+  display: none;
+}
+
+img {
+  width: 25vw;
+  height: 30vh;
+  margin: 10px;
+  border-radius: 10px;
+  border: 4px solid #92418b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/*# sourceMappingURL=style.css.map */
